@@ -9,13 +9,11 @@ jobs:
 
         - name: install modules
           working-directory: ./scripts
-          run: npm install jsdoc
+          run: npm install documentation
           
         - name: Build
-          uses: andstor/jsdoc-action@v1
-          with:
-            source_dir: ./scripts
-            output_dir: ./scripts
+          run: documentation build ./scripts/script.js -f md
+      
           
       
 
