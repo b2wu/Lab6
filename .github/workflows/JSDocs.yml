@@ -6,14 +6,16 @@ jobs:
     steps:
         - name: Checkout code
           uses: actions/checkout@v2
-
-        - name: install modules
-          working-directory: ./scripts
-          run: npm install documentation
           
         - name: Build
-          run: documentation build ./scripts/script.js -f md
+          uses: andstor/jsdoc-action@v1
+          with:
+            source_dir: ./scripts
+            recurse: true
+            output_dir: ./scripts
       
-          
+        - name: list
+          working-directory: ./scripts
+          run: ls
       
 
