@@ -17,7 +17,6 @@ jobs:
         - name: list
           working-directory: ./scripts
           run: ls |
-               cat index.html |
-               cat styles
+               cat index.html 
 
 
