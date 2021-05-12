@@ -9,7 +9,8 @@ jobs:
           
         - name: document
           run: |
-            npm install -g documentation
+            npm install -g 
+            documentation
       
         - name: Build
           uses: andstor/jsdoc-action@v1
