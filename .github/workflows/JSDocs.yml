@@ -14,9 +14,8 @@ jobs:
             recurse: true
             output_dir: ./jsdocs
       
-        - name: list
-          working-directory: ./jsdocs
-          run: ls |
-               cat index.html 
 
 
+        - name: upload to repor
+          working-directory: ./
+          run: git add jsdocs/
