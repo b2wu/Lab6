@@ -16,7 +16,7 @@ jobs:
             
             
         - name: upload to repor
-          run: git git config --global b2wu@ucsd.edu   
+          run: git config --global b2wu@ucsd.edu   
           
           
         - name: upload to repor
