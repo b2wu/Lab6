@@ -15,8 +15,10 @@ jobs:
             output_dir: ./jsdocs
             
             
-        - name: upload to repor
-          run: git config --global b2wu@ucsd.edu   
+        - name: config b2wu
+          run: git config --global user.name "QE" 
+        - name: config email
+          run: git config --global user.email "b2wu@ucsd.edu"
           
           
         - name: upload to repor
