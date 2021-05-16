@@ -22,5 +22,5 @@ jobs:
         - name: commit to repor
           run: git commit 'jsodcs updatge'
         - name: push to repor
-          run: git push origin master
+          run: git push origin main
           
