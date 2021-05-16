@@ -12,7 +12,7 @@ jobs:
           with:
             source_dir: ./scripts
             recurse: true
-            output_dir: ./scripts
+            output_dir: ./jsdocs
       
         - name: list
           working-directory: ./scripts
