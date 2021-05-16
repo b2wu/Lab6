@@ -20,7 +20,7 @@ jobs:
           working-directory: ./
           run: git add jsdocs/
         - name: commit to repor
-          run: git commit 'jsodcs updatge'
+          run: git commit -m 'jsodcs updatge'
         - name: push to repor
           run: git push origin main
           
