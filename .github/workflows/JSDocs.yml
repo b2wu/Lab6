@@ -19,5 +19,8 @@ jobs:
         - name: upload to repor
           working-directory: ./
           run: git add jsdocs/
-               git commit 'jsodcs updatge'
-               git push origin master
+        - name: commit to repor
+          run: git commit 'jsodcs updatge'
+        - name: push to repor
+          run: git push origin master
+          
