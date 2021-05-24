@@ -7,8 +7,10 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v2
           
-        - name: checkout 
-          run:  git checkout jsdoc
+        - name: checkout  
+          run:  |
+            git branch jsdoc
+            git checkout jsdoc
         - name: Build
           uses: andstor/jsdoc-action@v1
           with:
