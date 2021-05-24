@@ -13,11 +13,14 @@ jobs:
             source_dir: ./scripts
             recurse: true
             output_dir: ./jsdocs
-            
+        
+        - name: branch check 
+          run: git branch
             
         - name: config b2wu
           working-directory: ./
           run: |
+            
             git config --global user.name "QE" 
             git config --global user.email "b2wu@ucsd.edu"
             git add jsdocs/
