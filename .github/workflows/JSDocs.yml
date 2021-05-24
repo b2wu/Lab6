@@ -20,7 +20,7 @@ jobs:
         - name: config b2wu
           working-directory: ./
           run: |
-            tocuh ./jsdocs/read.txt
+            touch ./jsdocs/read.txt
             git config --global user.name "QE" 
             git config --global user.email "b2wu@ucsd.edu"
             git checkout jsdoc
