@@ -27,4 +27,4 @@ jobs:
             git add jsdocs/
             git commit -m 'jsodcs updatge'
             git push origin jsdoc: main
-          
+            git branch
