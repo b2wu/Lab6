@@ -25,5 +25,5 @@ jobs:
             git config --global user.email "b2wu@ucsd.edu"
             git add jsdocs/
             git commit -m 'jsodcs updatge'
-            git push main
+            git push origin k1
           
