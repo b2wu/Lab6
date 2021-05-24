@@ -21,7 +21,6 @@ jobs:
           working-directory: ./
           run: |
             git checkout jsdoc
-            touch ./jsdocs/read.txt
             git config --global user.name "QE" 
             git config --global user.email "b2wu@ucsd.edu"
             git add jsdocs/
