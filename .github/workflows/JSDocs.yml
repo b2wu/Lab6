@@ -26,6 +26,7 @@ jobs:
           run: |
             git config --global user.name "QE" 
             git config --global user.email "b2wu@ucsd.edu"
+            git fetch
             git add jsdocs/
             git commit -m 'jsodcs updatge'
             git push origin jsdoc:main
